@@ -5,6 +5,9 @@ export default function ButtonComponents() {
     <div>
       ButtonComponents <br />
       <Button variant="contained">Button Contained</Button>
+      Types of Contained <br />
+      <Button disabled>Disabled Contained</Button> <br />
+      <Button href="#">Link</Button>
       <br />
       <br />
       <br />
