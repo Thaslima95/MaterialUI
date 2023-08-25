@@ -8,6 +8,7 @@ import ColorButton from './Components/ColorButton';
 import DialogeComponent from './Components/DialogeComponent';
 import SliderComponent from './Components/Slider';
 import { BrowserRouter ,Routes,Route} from 'react-router-dom';
+import SwitchComponent from './Components/SwitchComponent';
 
 
 
@@ -24,6 +25,7 @@ function App() {
     <Route path="/colorbutton" element={<ColorButton/>}/>
     <Route path="/dialoge" element={<DialogeComponent/>}/>
     <Route path="/slider" element={<SliderComponent/>}/>
+    <Route path="/switch" element={<SwitchComponent/>}/>
     </Routes>
     </BrowserRouter>
     </div>
