@@ -10,6 +10,7 @@ export default function SwitchComponent() {
   };
   return (
     <>
+      Switch Component
       <FormControlLabel
         label={state ? "On" : "Off"}
         control={<Switch checked={state} onChange={handleChange} />}

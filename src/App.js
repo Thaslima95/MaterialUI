@@ -9,6 +9,7 @@ import DialogeComponent from './Components/DialogeComponent';
 import SliderComponent from './Components/Slider';
 import { BrowserRouter ,Routes,Route} from 'react-router-dom';
 import SwitchComponent from './Components/SwitchComponent';
+import AutoCompleteComponent from './Components/AutoCompleteComponent';
 
 
 
@@ -26,6 +27,7 @@ function App() {
     <Route path="/dialoge" element={<DialogeComponent/>}/>
     <Route path="/slider" element={<SliderComponent/>}/>
     <Route path="/switch" element={<SwitchComponent/>}/>
+    <Route path="/autocomplete" element={<AutoCompleteComponent/>}/>
     </Routes>
     </BrowserRouter>
     </div>
