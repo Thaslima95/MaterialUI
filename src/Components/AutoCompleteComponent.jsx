@@ -20,6 +20,7 @@ export default function AutoCompleteComponent() {
           renderInput={(params) => <TextField {...params} label="Skills" />}
           value={value}
           onChange={(e, newvalue) => setvalue(newvalue)}
+          freeSolo
         />
       </Box>
     </>

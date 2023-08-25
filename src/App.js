@@ -10,6 +10,7 @@ import SliderComponent from './Components/Slider';
 import { BrowserRouter ,Routes,Route} from 'react-router-dom';
 import SwitchComponent from './Components/SwitchComponent';
 import AutoCompleteComponent from './Components/AutoCompleteComponent';
+import FloatingActionComponent from './Components/FloatingActionComponent';
 
 
 
@@ -28,6 +29,7 @@ function App() {
     <Route path="/slider" element={<SliderComponent/>}/>
     <Route path="/switch" element={<SwitchComponent/>}/>
     <Route path="/autocomplete" element={<AutoCompleteComponent/>}/>
+    <Route path="/floating" element={<FloatingActionComponent/>}/>
     </Routes>
     </BrowserRouter>
     </div>
