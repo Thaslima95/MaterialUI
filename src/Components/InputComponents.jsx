@@ -10,12 +10,15 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormLabel from "@mui/material/FormLabel";
+import Checkbox from "@mui/material/Checkbox";
+import { Button } from "@mui/material";
 
 export default function InputComponents() {
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
     <div>
       Shipping Address
-      <Box sx={{ width: 500 }}>
+      <Box sx={{ width: 500 }} m="auto">
         <Grid container spacing={2}>
           <Grid item xs={6}>
             <TextField
@@ -131,7 +134,14 @@ export default function InputComponents() {
               </RadioGroup>
             </FormControl>
           </Grid>
+          <Grid item xs={8}>
+            <Checkbox />
+            <span>Use this address for payment details</span>
+          </Grid>
         </Grid>
+        <Box display="flex" justifyContent="flex-end" alignItems="flex-end">
+          <Button variant="contained">Next</Button>
+        </Box>
       </Box>
     </div>
   );

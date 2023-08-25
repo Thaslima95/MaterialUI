@@ -8,6 +8,7 @@ import { BrowserRouter ,Routes,Route} from 'react-router-dom';
 function App() {
   return (
     <>
+    <div className="App">
     <BrowserRouter>
     <Routes>
     <Route path="/" element={<ButtonComponents/>}/>
@@ -15,6 +16,7 @@ function App() {
     
     </Routes>
     </BrowserRouter>
+    </div>
     </>
   );
 }
