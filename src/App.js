@@ -11,6 +11,7 @@ import { BrowserRouter ,Routes,Route} from 'react-router-dom';
 import SwitchComponent from './Components/SwitchComponent';
 import AutoCompleteComponent from './Components/AutoCompleteComponent';
 import FloatingActionComponent from './Components/FloatingActionComponent';
+import ButtonGroupComponent from './Components/ButtonGroupComponent';
 
 
 
@@ -30,6 +31,7 @@ function App() {
     <Route path="/switch" element={<SwitchComponent/>}/>
     <Route path="/autocomplete" element={<AutoCompleteComponent/>}/>
     <Route path="/floating" element={<FloatingActionComponent/>}/>
+    <Route path="/buttongrp" element={<ButtonGroupComponent/>}/>
     </Routes>
     </BrowserRouter>
     </div>
