@@ -5,6 +5,7 @@ import InputComponents from './Components/InputComponents';
 import RatingComponent from './Components/RatingComponent';
 import BadgeComponent from './Components/BadgeComponent';
 import ColorButton from './Components/ColorButton';
+import DialogeComponent from './Components/DialogeComponent';
 import { BrowserRouter ,Routes,Route} from 'react-router-dom';
 
 
@@ -20,6 +21,7 @@ function App() {
     <Route path="/rating" element={<RatingComponent/>}/>
     <Route path="/badge" element={<BadgeComponent/>}/>
     <Route path="/colorbutton" element={<ColorButton/>}/>
+    <Route path="/dialoge" element={<DialogeComponent/>}/>
     </Routes>
     </BrowserRouter>
     </div>
