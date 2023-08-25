@@ -14,6 +14,7 @@ import FloatingActionComponent from './Components/FloatingActionComponent';
 import ButtonGroupComponent from './Components/ButtonGroupComponent';
 import SelectComponent from './Components/SelectComponent';
 import TextFieldComponent from './Components/TextFieldComponent';
+import ToggleButtonComponent from './Components/ToggleButtonComponent';
 
 
 
@@ -36,6 +37,7 @@ function App() {
     <Route path="/buttongrp" element={<ButtonGroupComponent/>}/>
     <Route path="/select" element={<SelectComponent/>}/>
     <Route path="/text" element={<TextFieldComponent/>}/>
+    <Route path="/toggle" element={<ToggleButtonComponent/>}/>
     </Routes>
     </BrowserRouter>
     </div>
