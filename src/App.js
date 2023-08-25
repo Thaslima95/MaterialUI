@@ -12,6 +12,7 @@ import SwitchComponent from './Components/SwitchComponent';
 import AutoCompleteComponent from './Components/AutoCompleteComponent';
 import FloatingActionComponent from './Components/FloatingActionComponent';
 import ButtonGroupComponent from './Components/ButtonGroupComponent';
+import SelectComponent from './Components/SelectComponent';
 
 
 
@@ -32,6 +33,7 @@ function App() {
     <Route path="/autocomplete" element={<AutoCompleteComponent/>}/>
     <Route path="/floating" element={<FloatingActionComponent/>}/>
     <Route path="/buttongrp" element={<ButtonGroupComponent/>}/>
+    <Route path="/select" element={<SelectComponent/>}/>
     </Routes>
     </BrowserRouter>
     </div>
