@@ -8,7 +8,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
 
 export default function DialogeComponent() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const [log, setLog] = useState(false);
 
   const handleClickOpen = () => {
