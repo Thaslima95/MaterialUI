@@ -15,6 +15,10 @@ import ButtonGroupComponent from './Components/ButtonGroupComponent';
 import SelectComponent from './Components/SelectComponent';
 import TextFieldComponent from './Components/TextFieldComponent';
 import ToggleButtonComponent from './Components/ToggleButtonComponent';
+import RangeSlider from './Components/RangeSlider';
+import RequiredCheckboxComponent from './Components/RequiredCheckboxComponent';
+import ColorCheckbox from './Components/ColorCheckbox';
+import IconCheckbocXomponent from './Components/IconCheckbocXomponent';
 
 
 
@@ -38,6 +42,11 @@ function App() {
     <Route path="/select" element={<SelectComponent/>}/>
     <Route path="/text" element={<TextFieldComponent/>}/>
     <Route path="/toggle" element={<ToggleButtonComponent/>}/>
+     <Route path="/rangeslider" element={<RangeSlider/>}/>
+     <Route path="/requiredCheckbox" element={<RequiredCheckboxComponent/>}/>
+          <Route path="/colorCheckbox" element={<ColorCheckbox/>}/>
+          <Route path="/icon" element={<IconCheckbocXomponent/>}/>
+
     </Routes>
     </BrowserRouter>
     </div>
