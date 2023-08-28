@@ -19,6 +19,7 @@ import RangeSlider from './Components/RangeSlider';
 import RequiredCheckboxComponent from './Components/RequiredCheckboxComponent';
 import ColorCheckbox from './Components/ColorCheckbox';
 import IconCheckbocXomponent from './Components/IconCheckbocXomponent';
+import NativeSelectComponent from './Components/NativeSelectComponent';
 
 
 
@@ -44,8 +45,9 @@ function App() {
     <Route path="/toggle" element={<ToggleButtonComponent/>}/>
      <Route path="/rangeslider" element={<RangeSlider/>}/>
      <Route path="/requiredCheckbox" element={<RequiredCheckboxComponent/>}/>
-          <Route path="/colorCheckbox" element={<ColorCheckbox/>}/>
-          <Route path="/icon" element={<IconCheckbocXomponent/>}/>
+    <Route path="/colorCheckbox" element={<ColorCheckbox/>}/>
+    <Route path="/icon" element={<IconCheckbocXomponent/>}/>
+    <Route path="/nativeselect" element={<NativeSelectComponent/>}/>
 
     </Routes>
     </BrowserRouter>
