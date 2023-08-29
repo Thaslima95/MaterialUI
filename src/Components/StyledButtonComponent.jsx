@@ -11,5 +11,10 @@ const StyledButton = styled(Button)({
 });
 
 export default function StyledButtonComponent() {
-  return <StyledButton>MyButton</StyledButton>;
+  return (
+    <>
+      <StyledButton>MyButton</StyledButton>
+      <Button variant="contained" color="primary"></Button>
+    </>
+  );
 }
