@@ -5,7 +5,7 @@ export default function ColorButton() {
   return (
     <Stack direction="row" spacing={2}>
       <Button color="secondary">Secondary</Button>
-      <Button variant="contained" color="warning">
+      <Button variant="contained" color="primary">
         Warning
       </Button>
       <Button variant="contained" color="success">
