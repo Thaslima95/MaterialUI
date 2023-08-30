@@ -10,11 +10,10 @@ function Item(props: BoxProps) {
           theme.palette.mode === "dark" ? "#101010" : "#fff",
         color: (theme) =>
           theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-        border: "1px solid",
-        borderColor: (theme) =>
-          theme.palette.mode === "dark" ? "grey.800" : "grey.300",
+        borderBottom: "2px solid red",
+        borderColor: "red",
         p: 1,
-        borderRadius: 2,
+        borderRadius: 1,
         textAlign: "center",
         fontSize: "0.875rem",
         fontWeight: "700",
@@ -27,21 +26,76 @@ function Item(props: BoxProps) {
 
 export default function GridPractice() {
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "30%" }}>
       <Box
         sx={{
           display: "grid",
           gridAutoFlow: "row",
-          gridTemplateColumns: "repeat(5, 1fr)",
-          gridTemplateRows: "repeat(2, 50px)",
+          gridTemplateColumns: "repeat(4, 1fr)",
+          gridTemplateRows: "repeat(1, 50px)",
           gap: 1,
         }}
       >
-        <Item sx={{ gridColumn: "1", gridRow: "1 / 3" }}>1</Item>
+        <Item>1</Item>
         <Item>2</Item>
         <Item>3</Item>
         <Item>4</Item>
-        <Item sx={{ gridColumn: "5", gridRow: "1 / 3" }}>5</Item>
+      </Box>
+      <Box
+        sx={{
+          display: "grid",
+          gridAutoFlow: "row",
+          gridTemplateColumns: "repeat(4, 1fr)",
+          gridTemplateRows: "repeat(1, 50px)",
+          gap: 1,
+        }}
+      >
+        <Item>1</Item>
+        <Item>2</Item>
+        <Item>3</Item>
+        <Item>4</Item>
+      </Box>
+      <Box
+        sx={{
+          display: "grid",
+          gridAutoFlow: "row",
+          gridTemplateColumns: "repeat(4, 1fr)",
+          gridTemplateRows: "repeat(1, 50px)",
+          gap: 1,
+        }}
+      >
+        <Item>1</Item>
+        <Item>2</Item>
+        <Item>3</Item>
+        <Item>4</Item>
+      </Box>
+      <Box
+        sx={{
+          display: "grid",
+          gridAutoFlow: "row",
+          gridTemplateColumns: "repeat(4, 1fr)",
+          gridTemplateRows: "repeat(1, 50px)",
+          gap: 1,
+        }}
+      >
+        <Item>1</Item>
+        <Item>2</Item>
+        <Item>3</Item>
+        <Item>4</Item>
+      </Box>
+      <Box
+        sx={{
+          display: "grid",
+          gridAutoFlow: "row",
+          gridTemplateColumns: "repeat(4, 1fr)",
+          gridTemplateRows: "repeat(1, 50px)",
+          gap: 1,
+        }}
+      >
+        <Item>1</Item>
+        <Item>2</Item>
+        <Item>3</Item>
+        <Item>4</Item>
       </Box>
     </div>
   );
