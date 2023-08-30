@@ -70,14 +70,14 @@ export default function PaperComponent() {
             display: "grid",
             gridAutoFlow: "row",
             gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "repeat(1, 50px)",
+            gridTemplateRows: "repeat(1, 35px)",
             gap: 1,
           }}
         >
-          <Item>1</Item>
-          <Item>2</Item>
-          <Item>3</Item>
-          <Item>4</Item>
+          <Item onClick={() => console.log("%")}>%</Item>
+          <Item>CE</Item>
+          <Item>C</Item>
+          <Item>x</Item>
         </Box>
         <Box
           sx={{
@@ -85,14 +85,14 @@ export default function PaperComponent() {
             p: 2,
             gridAutoFlow: "row",
             gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "repeat(1, 50px)",
+            gridTemplateRows: "repeat(1, 35px)",
             gap: 1,
           }}
         >
-          <Item>1</Item>
-          <Item>2</Item>
+          <Item>1/x</Item>
+          <Item>x2</Item>
           <Item>3</Item>
-          <Item>4</Item>
+          <Item>/</Item>
         </Box>
         <Box
           sx={{
@@ -100,14 +100,14 @@ export default function PaperComponent() {
             p: 2,
             gridAutoFlow: "row",
             gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "repeat(1, 50px)",
+            gridTemplateRows: "repeat(1, 35px)",
             gap: 1,
           }}
         >
-          <Item>1</Item>
-          <Item>2</Item>
-          <Item>3</Item>
-          <Item>4</Item>
+          <Item>7</Item>
+          <Item>8</Item>
+          <Item>9</Item>
+          <Item>X</Item>
         </Box>
         <Box
           sx={{
@@ -115,14 +115,14 @@ export default function PaperComponent() {
             p: 2,
             gridAutoFlow: "row",
             gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "repeat(1, 50px)",
+            gridTemplateRows: "repeat(1, 35px)",
             gap: 1,
           }}
         >
-          <Item>1</Item>
-          <Item>2</Item>
-          <Item>3</Item>
           <Item>4</Item>
+          <Item>5</Item>
+          <Item>6</Item>
+          <Item>-</Item>
         </Box>
         <Box
           sx={{
@@ -130,14 +130,29 @@ export default function PaperComponent() {
             p: 2,
             gridAutoFlow: "row",
             gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "repeat(1, 50px)",
+            gridTemplateRows: "repeat(1, 35px)",
             gap: 1,
           }}
         >
           <Item>1</Item>
           <Item>2</Item>
           <Item>3</Item>
-          <Item>4</Item>
+          <Item>+</Item>
+        </Box>
+        <Box
+          sx={{
+            display: "grid",
+            p: 2,
+            gridAutoFlow: "row",
+            gridTemplateColumns: "repeat(4, 1fr)",
+            gridTemplateRows: "repeat(1, 35px)",
+            gap: 1,
+          }}
+        >
+          <Item>+/-</Item>
+          <Item>0</Item>
+          <Item>.</Item>
+          <Item>=</Item>
         </Box>
       </div>
     </>
