@@ -22,6 +22,9 @@ import IconCheckbocXomponent from './Components/IconCheckbocXomponent';
 import NativeSelectComponent from './Components/NativeSelectComponent';
 import GroupAutoComplete from './Components/GroupAutoComplete';
 import StyledButtonComponent from './Components/StyledButtonComponent';
+import ResponsiveGrid from './Components/ResponsiveGrid';
+import PaperComponent from './Components/PaperComponent';
+import GridPractice from './Components/GridPractice';
 
 
 
@@ -52,6 +55,9 @@ function App() {
     <Route path="/nativeselect" element={<NativeSelectComponent/>}/>
     <Route path="/group" element={<GroupAutoComplete/>}/>
     <Route path="/styledbutton" element={<StyledButtonComponent/>}/>
+    <Route path="/responsivegrid" element={<ResponsiveGrid/>}/>
+    <Route path="/paper" element={<PaperComponent/>}/>
+    <Route path="/gridpractice" element={<GridPractice/>}/>
 
     </Routes>
     </BrowserRouter>

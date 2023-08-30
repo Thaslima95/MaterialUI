@@ -1,8 +1,11 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import { useState } from "react";
 
 export default function GroupAutoComplete() {
+  const [value, setValue] = useState("");
+  console.log(value);
   const options = top100Films.map((option) => {
     const firstLetter = option.title[0].toUpperCase();
     return {
@@ -10,6 +13,7 @@ export default function GroupAutoComplete() {
       ...option,
     };
   });
+  console.log(options);
 
   return (
     <Autocomplete
@@ -23,6 +27,7 @@ export default function GroupAutoComplete() {
       renderInput={(params) => (
         <TextField {...params} label="With categories" />
       )}
+      onChange={(e, newValue) => setValue(newValue.title)}
     />
   );
 }
